@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/create_puzzle_number/static/css/main.f855e6bc.css",
+    "main.js": "/create_puzzle_number/static/js/main.64ecde20.js",
+    "index.html": "/create_puzzle_number/index.html",
+    "main.f855e6bc.css.map": "/create_puzzle_number/static/css/main.f855e6bc.css.map",
+    "main.64ecde20.js.map": "/create_puzzle_number/static/js/main.64ecde20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.64ecde20.js"
+  ]
+}
