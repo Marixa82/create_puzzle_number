@@ -1,10 +1,3 @@
-.puzzle-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
   .puzzle-piece {
     width: 70px;
     height: 60px;
@@ -13,11 +6,11 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    background-color: #4caf50;
     color: white;
+    -webkit-text-stroke: 0.3px black; 
+  text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
   }
   
@@ -25,7 +18,4 @@
     transform: scale(1.1);
   }
   
-  .puzzle-piece:active {
-    transform: scale(0.9);
-  }
-  
+ 
