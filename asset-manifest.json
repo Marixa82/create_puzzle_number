@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/create_puzzle_number/static/css/main.4054fe6f.css",
-    "main.js": "/create_puzzle_number/static/js/main.9cfd873f.js",
+    "main.css": "/create_puzzle_number/static/css/main.6c34ada8.css",
+    "main.js": "/create_puzzle_number/static/js/main.ad287736.js",
     "index.html": "/create_puzzle_number/index.html",
-    "main.4054fe6f.css.map": "/create_puzzle_number/static/css/main.4054fe6f.css.map",
-    "main.9cfd873f.js.map": "/create_puzzle_number/static/js/main.9cfd873f.js.map"
+    "main.6c34ada8.css.map": "/create_puzzle_number/static/css/main.6c34ada8.css.map",
+    "main.ad287736.js.map": "/create_puzzle_number/static/js/main.ad287736.js.map"
   },
   "entrypoints": [
-    "static/css/main.4054fe6f.css",
-    "static/js/main.9cfd873f.js"
+    "static/css/main.6c34ada8.css",
+    "static/js/main.ad287736.js"
   ]
 }
