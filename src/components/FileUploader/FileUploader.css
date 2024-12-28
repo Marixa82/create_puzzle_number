@@ -1,0 +1,31 @@
+.file-uploader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+  }
+  
+  .hidden-file-input {
+    display: none; /* Приховуємо стандартний інпут */
+  }
+  
+  .upload-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #218838;
+  }
+  
+  .upload-button:active {
+    background-color: #1e7e34;
+  }
+  
