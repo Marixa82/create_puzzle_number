@@ -1,0 +1,61 @@
+.puzzle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.number-container{
+  padding: 0 20px;
+}
+button {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+  width: auto;
+  height: 44px;
+  padding: 10px 40px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #F5FFFA;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 15px;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #fff;
+  color: blue;
+}
+.number-sequence {
+  word-break: break-word; /* Переносить текст у довільному місці, якщо він довший за ширину контейнера */
+  overflow-wrap: break-word; /* Додатково забезпечує перенос тексту */
+  white-space: normal; /* Дозволяє переносити текст і не фіксує його в один рядок */
+  text-align: center; /* Вирівнювання тексту по центру, якщо потрібно */
+  display: inline-block; /* Дозволяє застосовувати обмеження ширини */
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Закруглення кутів */
+  padding: 10px;
+  display: inline-block;
+  background: grey;
+  -webkit-text-stroke: 0.3px black;
+  text-align: center;
+  
+}
+.puzzle-title {
+  color: blue;
+  -webkit-text-stroke: 1px #eee; 
+  text-align: center;
+}
+.puzzle-loader{
+  color: blue;
+}
+.puzzle-header{
+  display: flex;
+  flex-direction: column;
+}
