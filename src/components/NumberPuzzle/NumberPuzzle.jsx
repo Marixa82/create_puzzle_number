@@ -1,4 +1,4 @@
-import React, { useState, useRef} from "react";
+import React, { useState} from "react";
 import FileUploader from "../FileUploader/FileUploader";
 import ResultDisplay from "../ResultDisplay/ResultDisplay";
 import findSequence from "../../utils/findSequence";
@@ -11,7 +11,12 @@ const NumberPuzzle = () => {
   const [result, setResult] = useState([]);
   const [sequenceString, setSequenceString] = useState(""); // Для рядка результату
   const [loading, setLoading] = useState(false); 
-  const fileInputRef = useRef(null); 
+  const handleFileUpload = (newNumbers) => {
+    // Очищуємо стан перед завантаженням нового файлу
+    setNumbers(newNumbers);
+    setResult([]); // Очищуємо результат
+    setSequenceString(""); // Очищуємо з'єднаний рядок
+  };
 
   const handleCalculate = async () => {
     if (!numbers || numbers.length === 0) {
@@ -30,18 +35,15 @@ const NumberPuzzle = () => {
       setSequenceString(result); // Оновлюємо рядок
 
       setLoading(false); // Вимкнути лоадер
-      if (fileInputRef.current) {
-        fileInputRef.current.value = null;
-      }
+    
     }, 1000); // Емуляція затримки (1 секунда)
   };
-  
   
   return (
     <div >
       <h1 className="puzzle-title">Цифровий Пазл</h1>
       <div className="puzzle-header">
-        <FileUploader onFileUpload={setNumbers} inputRef={fileInputRef}/>
+        <FileUploader onFileUpload={handleFileUpload} />
         <button onClick={handleCalculate}>Знайти Послідовність</button>
       </div>
      
