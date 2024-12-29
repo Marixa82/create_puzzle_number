@@ -50,7 +50,7 @@ button:hover {
 .puzzle-title {
   color: blue;
   -webkit-text-stroke: 1px #eee; 
-  text-align: center;
+  /* text-align: center; */
 }
 .puzzle-loader{
   color: blue;
