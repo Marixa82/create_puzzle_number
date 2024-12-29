@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# **Puzzle Sequence**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Puzzle Sequence - це ефективний та швидкий інструмент для роботи з великими масивами чисел, який дозволяє користувачам знаходити логічні послідовності чисел із файлів без необхідності вручну перевіряти кожен елемент.
 
-In the project directory, you can run:
+![Puzzle Sequence Welcome page](./public/welcome_page.png)
 
-### `npm start`
+![Puzzle Sequence Searching for sequences](./public/searching_for_sequence.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Puzzle Sequence Result](./public/result.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Опис**
 
-### `npm test`
+це веб-застосунок для обробки великих файлів з числами у форматі 6-значних чисел. За допомогою алгоритму пошуку послідовностей, застосунок знаходить найбільшу ланцюжок чисел, що мають спільні цифри на межі. Результат обробки представлений у вигляді пазлів, де кожен елемент пазла є числом, яке відповідає певній частині великої послідовності. Ви можете завантажити текстовий файл, і застосунок автоматично знайде та відобразить найбільшу послідовність чисел, згенеровану на основі цього файлу.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## **Особливості**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Завантаження файлів:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
++ Користувач може завантажити файл у форматі .txt з 6-значними числами.
++ Підтримується обробка великих файлів, що дозволяє розбивати їх на частини для більш ефективної обробки.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Пошук послідовностей:
 
-### `npm run eject`
++ Алгоритм знаходить найбільшу ланцюжок чисел, де останні дві цифри одного числа збігаються з першими двома цифрами наступного.
++ Результат виводиться у вигляді чисел, представлених як пазли.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Зв'язування чисел:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
++ Після пошуку найбільшої послідовності, з'єднані числа виводяться у вигляді рядка, що відображає завершену послідовність.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Інтерфейс:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
++ Зручний та інтуїтивно зрозумілий інтерфейс, що дозволяє користувачеві завантажити файл і переглянути результат за кілька секунд.
 
-## Learn More
+5. Різнокольорові пазли:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
++ Кожен пазл має випадковий колір, щоб користувачам було цікаво працювати з результатами.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Лоадер:
 
-### Code Splitting
++ Для великих файлів застосунок використовує лоадер, щоб вказати користувачеві, що обробка ще триває.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
