@@ -41,24 +41,24 @@ const NumberPuzzle = () => {
   
   return (
     <div >
-      <h1 className="puzzle-title">Цифровий Пазл</h1>
+      <h1 className="puzzle-title">Puzzle Sequence</h1>
       <div className="puzzle-header">
         <FileUploader onFileUpload={handleFileUpload} />
-        <button onClick={handleCalculate}>Знайти Послідовність</button>
+        <button onClick={handleCalculate}>Find the Sequence</button>
       </div>
      
       <div className="puzzle-container">
         {loading ? (
           <div className="loader">
             <PulseLoader color="#0909db" size={15} />
-            <p className="puzzle-loader">Йде пошук співпадінь, зачекайте...</p>
+            <p className="puzzle-loader">Searching for matches, please wait...</p>
           </div>
         ) : (
           <>
             <ResultDisplay result={result} />
             {sequenceString && (
               <div className="number-container">
-                <h2 className="puzzle-title">З'єднаний Рядок:</h2>
+                <h2 className="puzzle-title">Combined Sequence:</h2>
                 <p className="number-sequence">{sequenceString}</p> {/* Виведення з'єднаного рядка */}
               </div>
             )}
